@@ -62,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">0.778s</div>
+<div class="counter">0.847s</div>
 <p>duration</p>
 </div>
 </td>
@@ -92,14 +92,12 @@
 </tr>
 </thead>
 <tr>
-<td class="success">
-<a href="f9ZdqPj7kYc.html">contextLoads()</a>
-</td>
+<td class="success">contextLoads()</td>
 <td class="path" hidden="">contextLoads()</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.299s</td>
+<td>0.002s</td>
 <td class="success">100%</td>
 </tr>
 </table>
@@ -108,10 +106,10 @@
 <div class="tab">
 <h2>standard output</h2>
 <span class="code">
-<pre id="root-0-test-stdout-com.sun.task_manager.TaskMaangerApplicationTests">00:11:43.330 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sun.task_manager.TaskMaangerApplicationTests]: TaskMaangerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:11:43.361 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sun.task_manager.TaskMaangerApplication for test class com.sun.task_manager.TaskMaangerApplicationTests
-00:11:43.387 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sun.task_manager.TaskMaangerApplicationTests]: TaskMaangerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:11:43.387 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sun.task_manager.TaskMaangerApplication for test class com.sun.task_manager.TaskMaangerApplicationTests
+<pre id="root-0-test-stdout-com.sun.task_manager.TaskMaangerApplicationTests">2026-06-28T17:50:18.057+07:00  INFO 5975 --- [task_maanger] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sun.task_manager.TaskMaangerApplicationTests]: TaskMaangerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-28T17:50:18.058+07:00  INFO 5975 --- [task_maanger] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sun.task_manager.TaskManagerApplication for test class com.sun.task_manager.TaskMaangerApplicationTests
+2026-06-28T17:50:18.059+07:00  INFO 5975 --- [task_maanger] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sun.task_manager.TaskMaangerApplicationTests]: TaskMaangerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-28T17:50:18.059+07:00  INFO 5975 --- [task_maanger] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sun.task_manager.TaskManagerApplication for test class com.sun.task_manager.TaskMaangerApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -122,9 +120,32 @@
 
  :: Spring Boot ::                (v4.1.0)
 
-2026-06-28T00:11:43.476+07:00  INFO 46809 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : Starting TaskMaangerApplicationTests using Java 21.0.5 with PID 46809 (started by sunn in /Users/sunn/Desktop/Github Repos/task_manager_spring_boot)
-2026-06-28T00:11:43.476+07:00  INFO 46809 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-06-28T00:11:43.755+07:00  INFO 46809 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : Started TaskMaangerApplicationTests in 0.348 seconds (process running for 0.754)
+2026-06-28T17:50:18.074+07:00  INFO 5975 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : Starting TaskMaangerApplicationTests using Java 21.0.5 with PID 5975 (started by sunn in /Users/sunn/Desktop/Github Repos/task_manager_spring_boot)
+2026-06-28T17:50:18.075+07:00  INFO 5975 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-06-28T17:50:18.204+07:00  INFO 5975 --- [task_maanger] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T17:50:18.209+07:00  INFO 5975 --- [task_maanger] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2026-06-28T17:50:18.304+07:00  INFO 5975 --- [task_maanger] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T17:50:18.370+07:00  INFO 5975 --- [task_maanger] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8386cafd-e756-4a39-93c7-8529dfeb5046 user=SA
+2026-06-28T17:50:18.371+07:00  INFO 5975 --- [task_maanger] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T17:50:18.384+07:00  INFO 5975 --- [task_maanger] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-28T17:50:18.411+07:00  INFO 5975 --- [task_maanger] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-06-28T17:50:18.509+07:00  INFO 5975 --- [task_maanger] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T17:50:18.543+07:00  INFO 5975 --- [task_maanger] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:8386cafd-e756-4a39-93c7-8529dfeb5046]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 8386CAFD-E756-4A39-93C7-8529DFEB5046/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T17:50:18.714+07:00  INFO 5975 --- [task_maanger] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T17:50:18.724+07:00  INFO 5975 --- [task_maanger] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T17:50:18.756+07:00  WARN 5975 --- [task_maanger] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T17:50:18.897+07:00  INFO 5975 --- [task_maanger] [    Test worker] c.s.t.TaskMaangerApplicationTests        : Started TaskMaangerApplicationTests in 0.835 seconds (process running for 1.939)
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.sun.task_manager.TaskMaangerApplicationTests">Copy</button>
 </span>
@@ -139,7 +160,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.5.1</a> at Jun 28, 2026, 12:11:44 AM</p>
+<a href="https://www.gradle.org">Gradle 9.5.1</a> at Jun 28, 2026, 5:50:18 PM</p>
 </div>
 </div>
 </body>

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Main-Class: org.springframework.boot.loader.launch.JarLauncher
-Start-Class: com.sun.task_manager.TaskMaangerApplication
+Start-Class: com.sun.task_manager.TaskManagerApplication
 Spring-Boot-Version: 4.1.0
 Spring-Boot-Classes: BOOT-INF/classes/
 Spring-Boot-Lib: BOOT-INF/lib/
