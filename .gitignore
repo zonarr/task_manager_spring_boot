@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Gradle local caches and generated build output
+.gradle/
+build/

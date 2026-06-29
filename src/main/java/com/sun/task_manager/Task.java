@@ -1,4 +1,7 @@
 package com.sun.task_manager;
-public record Task(long id,String description){
+
+import org.springframework.data.annotation.Id;
+
+public record Task(@Id long id,String description){
     
 }
