@@ -1,0 +1,1 @@
+INSERT INTO TASKS (id,title) VALUES (0,'hello world');

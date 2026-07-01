@@ -15,16 +15,16 @@ public class TaskJsonTest {
 
     @Test
     void serializeTask() throws IOException{
-        Task task = new Task(1L,"hello world");
+        Task task = new Task(0,"hello world");
         assertThat(taskJson.write(task)).isStrictlyEqualToJson("expected.json");
-        assertThat(taskJson.write(task)).hasJsonPathStringValue("@.description");
+        assertThat(taskJson.write(task)).hasJsonPathStringValue("@.title");
         assertThat(taskJson.write(task)).hasJsonPathNumberValue("@.id");
     }
 
     @Test
     void deserializetask() throws IOException{
         Task task = taskJson.readObject("expected.json");
-        assertThat(task.description()).isEqualTo("hello world");
-        assertThat(task.id()).isEqualTo(1L);
+        assertThat(task.title()).isEqualTo("hello world");
+        assertThat(task.id()).isEqualTo(0);
     }
 }

@@ -1,7 +1,9 @@
 package com.sun.task_manager;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
-public record Task(@Id long id,String description){
+@Table("TASKS")
+public record Task(@Id Integer id,String title){
     
 }

@@ -39,3 +39,5 @@ out/
 # Gradle local caches and generated build output
 .gradle/
 build/
+
+.DS_Store
